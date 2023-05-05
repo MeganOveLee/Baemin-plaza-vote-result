@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+    <style>
+        body {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        article {
+            padding-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="article1">
+        <h4>고객관리 cs</h4>
+        <input type='button' onclick='count("plus", "article1")' value='+' />
+        <input type='button' onclick='count("minus", "article1")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article2">
+        <h4>운영정책</h4>
+        <input type='button' onclick='count("plus", "article2")' value='+' />
+        <input type='button' onclick='count("minus", "article2")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article3">
+        <h4>영업시간</h4>
+        <input type='button' onclick='count("plus", "article3")' value='+' />
+        <input type='button' onclick='count("minus", "article3")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article4">
+        <h4>대출</h4>
+        <input type='button' onclick='count("plus", "article4")' value='+' />
+        <input type='button' onclick='count("minus", "article4")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article5">
+        <h4>인건비</h4>
+        <input type='button' onclick='count("plus", "article5")' value='+' />
+        <input type='button' onclick='count("minus", "article5")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article6">
+        <h4>입지요건</h4>
+        <!-- -----상권이 죽었다던지 역세권, 1층입점 유동인구 감소 등--- -->
+        <input type='button' onclick='count("plus", "article6")' value='+' />
+        <input type='button' onclick='count("minus", "article6")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article7">
+        <h4>임대료</h4>
+        <input type='button' onclick='count("plus", "article7")' value='+' />
+        <input type='button' onclick='count("minus", "article7")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article8">
+        <h4>웨이팅</h4>
+        <input type='button' onclick='count("plus", "article8")' value='+' />
+        <input type='button' onclick='count("minus", "article8")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article9">
+        <h4>재료비</h4>
+        <input type='button' onclick='count("plus", "article9")' value='+' />
+        <input type='button' onclick='count("minus", "article9")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article10">
+        <h4>사업아이템</h4>
+        <input type='button' onclick='count("plus", "article10")' value='+' />
+        <input type='button' onclick='count("minus", "article10")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article21">
+        <h4>사업확장</h4>
+        <input type='button' onclick='count("plus", "article21")' value='+' />
+        <input type='button' onclick='count("minus", "article21")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article11">
+        <h4>시설</h4>
+        <input type='button' onclick='count("plus", "article11")' value='+' />
+        <input type='button' onclick='count("minus", "article11")' value='-' />
+        <div class='result'>0</div>
+    </article>
+
+    <article id="article13">
+        <h4>메뉴 가격</h4>
+        <input type='button' onclick='count("plus", "article13")' value='+' />
+        <input type='button' onclick='count("minus", "article13")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article20">
+        <h4>공과금</h4>
+        <input type='button' onclick='count("plus", "article20")' value='+' />
+        <input type='button' onclick='count("minus", "article20")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article14">
+        <h4>직원관리</h4>
+        <input type='button' onclick='count("plus", "article14")' value='+' />
+        <input type='button' onclick='count("minus", "article14")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article15">
+        <h4>마케팅</h4>
+        <input type='button' onclick='count("plus", "article15")' value='+' />
+        <input type='button' onclick='count("minus", "article15")' value='-' />
+        <div class='result'>0</div>
+    </article> 
+    <article id="article16">
+        <h4>재난,화재,사고 대응</h4>
+        <input type='button' onclick='count("plus", "article16")' value='+' />
+        <input type='button' onclick='count("minus", "article16")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article17">
+        <h4>다른 가게 궁금</h4>
+        <input type='button' onclick='count("plus", "article17")' value='+' />
+        <input type='button' onclick='count("minus", "article16")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article18">
+        <h4>매출</h4>
+        <input type='button' onclick='count("plus", "article18")' value='+' />
+        <input type='button' onclick='count("minus", "article18")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article19">
+        <h4>자기 관리</h4>
+        <input type='button' onclick='count("plus", "article19")' value='+' />
+        <input type='button' onclick='count("minus", "article19")' value='-' />
+        <div class='result'>0</div>
+    </article>
+    <article id="article12">
+        <h4>기타</h4>
+        <input type='button' onclick='count("plus", "article12")' value='+' />
+        <input type='button' onclick='count("minus", "article12")' value='-' />
+        <div class='result'>0</div>
+    </article>
+
+    <div id="total">
+        <h4>Total</h4>
+        <div class='result'>0</div>
+    </div>
+
+    <script>
+        		function count(type, articleId) {
+			// 결과를 표시할 element
+			const resultElement = document.querySelector(`#${articleId} .result`);
+
+			// 현재 element의 값
+			let number = parseInt(resultElement.innerText);
+
+			// 더하기/빼기
+			if (type === "plus") {
+				number = number + 1;
+			} else if (type === "minus") {
+				number = number - 1;
+			}
+
+			// 결과 출력
+			resultElement.innerText = number;
+
+			// 총합 계산
+			let total = 0;
+			const resultElements = document.querySelectorAll("article .result");
+			resultElements.forEach((element) => {
+				total += parseInt(element.innerText);
+			});
+
+			// 총합 출력
+			const totalElement = document.querySelector("#total .result");
+			totalElement.innerText = total;
+		}
+    </script>
+</body>
+
+</html>
